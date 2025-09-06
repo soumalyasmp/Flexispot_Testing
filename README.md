@@ -4,16 +4,6 @@ This repository contains manual and automated test cases for the FlexiSpot Seat 
 The goal is to validate key features such as login, desk booking, admin controls, and reporting.
 Automation is implemented using Robot Framework + SeleniumLibrary.
 
-📂 Project Structure
-FlexiSpot_Testing/
-├── manual_testcases/
-│   └── FlexiSpot_TestCases.xlsx    # Manual test cases
-├── tests/
-│   ├── login_tests.robot           # Automated login tests
-│   └── booking_tests.robot         # Automated booking test
-├── results/                        # Auto-generated test results (log.html, report.html)
-└── README.md                       # Project documentation
-
 📝 Manual Test Cases
 
 Manual test cases are documented in:
@@ -21,27 +11,19 @@ Manual test cases are documented in:
 
 They cover:
 
-🔑 Login
-
-🪑 Desk booking
-
-🚫 Double booking prevention
-
-🛠️ Admin desk management
-
-📅 Calendar integration
-
-📊 Usage reports
-
-⚖️ Booking rules enforcement
-
-📝 Booking form submission ✅
-
-🤖 Automated Test Cases
+   🔑 Login
+   🪑 Desk booking
+   🚫 Double booking prevention
+   🛠️ Admin desk management
+   📅 Calendar integration
+   📊 Usage reports
+   ⚖️ Booking rules enforcement
+   📝 Booking form submission ✅
+   🤖 Automated Test Cases
 
 Automation is written in Robot Framework with SeleniumLibrary.
 
-🔧 Prerequisites
+*🔧 Prerequisites*
 
 Install Python ≥ 3.8
 
