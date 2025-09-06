@@ -1,18 +1,18 @@
-FlexiSpot Testing Project
+🚀 FlexiSpot Testing Project
 
 This repository contains manual and automated test cases for the FlexiSpot Seat Booking Portal.
-The purpose is to validate key features such as login, desk booking, admin controls, and reporting.
+The goal is to validate key features such as login, desk booking, admin controls, and reporting.
 Automation is implemented using Robot Framework + SeleniumLibrary.
 
 📂 Project Structure
 FlexiSpot_Testing/
 ├── manual_testcases/
-│   └── FlexiSpot_TestCases.xlsx   # Manual test cases
+│   └── FlexiSpot_TestCases.xlsx    # Manual test cases
 ├── tests/
-│   ├── login_tests.robot          # Automated login tests
-│   └── booking_tests.robot        # Automated booking test
-├── results/                       # Auto-generated test results (log.html, report.html)
-└── README.md                      # Project documentation
+│   ├── login_tests.robot           # Automated login tests
+│   └── booking_tests.robot         # Automated booking test
+├── results/                        # Auto-generated test results (log.html, report.html)
+└── README.md                       # Project documentation
 
 📝 Manual Test Cases
 
@@ -21,70 +21,70 @@ Manual test cases are documented in:
 
 They cover:
 
-Login
+🔑 Login
 
-Desk booking
+🪑 Desk booking
 
-Double booking prevention
+🚫 Double booking prevention
 
-Admin desk management
+🛠️ Admin desk management
 
-Calendar integration
+📅 Calendar integration
 
-Usage reports
+📊 Usage reports
 
-Booking rules enforcement
+⚖️ Booking rules enforcement
 
-Booking form submission ✅
+📝 Booking form submission ✅
 
 🤖 Automated Test Cases
 
-Automation is written in Robot Framework using SeleniumLibrary.
+Automation is written in Robot Framework with SeleniumLibrary.
 
-Prerequisites
+🔧 Prerequisites
 
-Install Python (≥ 3.8)
+Install Python ≥ 3.8
 
 Install dependencies:
 
 pip install robotframework
 pip install robotframework-seleniumlibrary
 
-Running Tests
+▶️ Running Tests
 
-To execute all automated tests:
+Run all tests:
 
 python -m robot -d results tests/
 
 
-To run a specific test file:
+Run a specific test file:
 
 python -m robot -d results tests/login_tests.robot
 
-Test Reports
+📊 Test Reports
 
-After execution, results are available in the results/ folder:
+After execution, reports are generated in the results/ folder:
 
-report.html → Summary of test run
+report.html → Test summary
 
 log.html → Detailed execution log
 
-Open these in a browser to review.
+Open them in a browser to review results.
 
 ✅ Current Automated Coverage
 
 Login Tests
 
-Valid login
+✔️ Valid login
 
-Invalid login
+❌ Invalid login
 
 Booking Test
 
-Simulated desk booking form submission
+📝 Simulated desk booking form submission
 
 📌 Notes
 
 Since the real FlexiSpot system is not available, automation uses dummy websites to simulate functionality.
 
-The structure can be easily extended with more test cases as needed.
+The framework is modular and can be easily extended with more test cases.
