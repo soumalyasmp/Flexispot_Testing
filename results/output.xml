@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.5 on win32)" generated="2025-09-06T14:27:13.233607" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="G:\coding\off campus assesments\sasken\tests">
+<suite id="s1-s1" name="Booking Tests" source="G:\coding\off campus assesments\sasken\tests\booking_tests.robot">
+<test id="s1-s1-t1" name="Book A Desk Successfully" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-06T14:27:13.707388" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/automation-practice-form'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-06T14:27:13.706393" elapsed="51.194172"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-06T14:28:04.901964" elapsed="0.071462"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T14:28:04.975723" level="INFO">Typing text 'John' into text field 'id=firstName'.</msg>
+<arg>id=firstName</arg>
+<arg>John</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T14:28:04.974714" elapsed="0.282924"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T14:28:05.259969" level="INFO">Typing text 'Doe' into text field 'id=lastName'.</msg>
+<arg>id=lastName</arg>
+<arg>Doe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T14:28:05.258642" elapsed="0.164670"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T14:28:05.425022" level="INFO">Typing text 'john.doe@example.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>john.doe@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T14:28:05.424320" elapsed="0.168971"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-06T14:28:05.593291" level="INFO">Clicking element 'css=label[for='gender-radio-1']'.</msg>
+<msg time="2025-09-06T14:28:07.022161" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-06T14:28:07.023134" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;label title="" for="gender-radio-1" class="custom-control-label"&gt;...&lt;/label&gt; is not clickable at point (630, 658). Other element would receive the click: &lt;iframe frameborder="0" src="https://261360604a8ef3590f0619dbb71d6953.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="809" height="100" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="private-state-token-redemption;attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=138.0.7204.185); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff78765e415+77285]
+	GetHandleVerifier [0x0x7ff78765e470+77376]
+	(No symbol) [0x0x7ff787429a6a]
+	(No symbol) [0x0x7ff7874883e9]
+	(No symbol) [0x0x7ff787485d8b]
+	(No symbol) [0x0x7ff787482dd1]
+	(No symbol) [0x0x7ff787481ce1]
+	(No symbol) [0x0x7ff787473458]
+	(No symbol) [0x0x7ff7874a860a]
+	(No symbol) [0x0x7ff787472d06]
+	(No symbol) [0x0x7ff7874a8820]
+	(No symbol) [0x0x7ff7874d087f]
+	(No symbol) [0x0x7ff7874a83e3]
+	(No symbol) [0x0x7ff787471521]
+	(No symbol) [0x0x7ff7874722b3]
+	GetHandleVerifier [0x0x7ff787941efd+3107021]
+	GetHandleVerifier [0x0x7ff78793c29d+3083373]
+	GetHandleVerifier [0x0x7ff78795bedd+3213485]
+	GetHandleVerifier [0x0x7ff78767884e+184862]
+	GetHandleVerifier [0x0x7ff78768055f+216879]
+	GetHandleVerifier [0x0x7ff787667084+113236]
+	GetHandleVerifier [0x0x7ff787667239+113673]
+	GetHandleVerifier [0x0x7ff78764e298+11368]
+	BaseThreadInitThunk [0x0x7ffed72ce8d7+23]
+	RtlUserThreadStart [0x0x7ffed7ebc34c+44]
+</msg>
+<arg>css=label[for='gender-radio-1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-09-06T14:28:05.593291" elapsed="1.485257">ElementClickInterceptedException: Message: element click intercepted: Element &lt;label title="" for="gender-radio-1" class="custom-control-label"&gt;...&lt;/label&gt; is not clickable at point (630, 658). Other element would receive the click: &lt;iframe frameborder="0" src="https://261360604a8ef3590f0619dbb71d6953.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="809" height="100" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="private-state-token-redemption;attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=138.0.7204.185); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff78765e415+77285]
+	GetHandleVerifier [0x0x7ff78765e470+77376]
+	(No symbol) [0x0x7ff787429a6a]
+	(No symbol) [0x0x7ff7874883e9]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff787482dd1]
+	(No symbol) [0x0x7ff787481ce1]
+	(No symbol) [0x0x7ff787473458]
+	(No symbol) [0x0x7ff7874a860a]
+	(No symbol) [0x0x7ff787472d06]
+	(No symbol) [0x0x7ff7874a8820]
+	(No symbol) [0x0x7ff7874d087f]
+	(No symbol) [0x0x7ff7874a83e3]
+	(No symbol) [0x0x7ff787471521]
+	(No symbol) [0x0x7ff7874722b3]
+	GetHandleVerifier [0x0x7ff787941efd+3107021]
+	GetHandleVerifier [0x0x7ff78793c29d+3083373]
+	GetHandleVerifier [0x0x7ff78795bedd+3213485]
+	GetHandleVerifier [0x0x7ff78767884e+184862]
+	GetHandleVerifier [0x0x7ff78768055f+216879]
+	GetHandleVerifier [0x0x7ff787667084+113236]
+	GetHandleVerifier [0x0x7ff787667239+113673]
+	GetHandleVerifier [0x0x7ff78764e298+11368]
+	BaseThreadInitThunk [0x0x7ffed72ce8d7+23]
+	RtlUserThreadStart [0x0x7ffed7ebc34c+44]</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=userNumber</arg>
+<arg>9876543210</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-06T14:28:07.080546" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-06T14:28:07.080546" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Thanks for submitting the form</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-09-06T14:28:07.081578" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-09-06T14:28:07.081578" elapsed="0.000000"/>
+</kw>
+<doc>Simulates booking a desk by filling a form on a dummy site</doc>
+<status status="FAIL" start="2025-09-06T14:27:13.705393" elapsed="53.376185">ElementClickInterceptedException: Message: element click intercepted: Element &lt;label title="" for="gender-radio-1" class="custom-control-label"&gt;...&lt;/label&gt; is not clickable at point (630, 658). Other element would receive the click: &lt;iframe frameborder="0" src="https://261360604a8ef3590f0619dbb71d6953.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html" id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="809" height="100" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="private-state-token-redemption;attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=138.0.7204.185); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff78765e415+77285]
+	GetHandleVerifier [0x0x7ff78765e470+77376]
+	(No symbol) [0x0x7ff787429a6a]
+	(No symbol) [0x0x7ff7874883e9]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x0x7ff787482dd1]
+	(No symbol) [0x0x7ff787481ce1]
+	(No symbol) [0x0x7ff787473458]
+	(No symbol) [0x0x7ff7874a860a]
+	(No symbol) [0x0x7ff787472d06]
+	(No symbol) [0x0x7ff7874a8820]
+	(No symbol) [0x0x7ff7874d087f]
+	(No symbol) [0x0x7ff7874a83e3]
+	(No symbol) [0x0x7ff787471521]
+	(No symbol) [0x0x7ff7874722b3]
+	GetHandleVerifier [0x0x7ff787941efd+3107021]
+	GetHandleVerifier [0x0x7ff78793c29d+3083373]
+	GetHandleVerifier [0x0x7ff78795bedd+3213485]
+	GetHandleVerifier [0x0x7ff78767884e+184862]
+	GetHandleVerifier [0x0x7ff78768055f+216879]
+	GetHandleVerifier [0x0x7ff787667084+113236]
+	GetHandleVerifier [0x0x7ff787667239+113673]
+	GetHandleVerifier [0x0x7ff78764e298+11368]
+	BaseThreadInitThunk [0x0x7ffed72ce8d7+23]
+	RtlUserThreadStart [0x0x7ffed7ebc34c+44]</status>
+</test>
+<status status="FAIL" start="2025-09-06T14:27:13.261914" elapsed="53.823029"/>
+</suite>
+<suite id="s1-s2" name="Login Tests" source="G:\coding\off campus assesments\sasken\tests\login_tests.robot">
+<test id="s1-s2-t1" name="Valid Login" line="6">
+<kw name="Open FlexiSpot" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-06T14:28:07.106459" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<arg>${URL_LOGIN}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-06T14:28:07.105456" elapsed="76.597715"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-06T14:29:23.704562" elapsed="0.048311"/>
+</kw>
+<status status="PASS" start="2025-09-06T14:28:07.105456" elapsed="76.648432"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T14:29:23.754890" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${VALID_USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T14:29:23.753888" elapsed="0.178073"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T14:29:23.933192" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${VALID_PASS}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T14:29:23.933192" elapsed="0.231976"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T14:29:24.167665" level="INFO">Clicking button 'css=button.radius'.</msg>
+<arg>css=button.radius</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T14:29:24.167665" elapsed="3.313353"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-09-06T14:29:27.495489" level="INFO">Current page contains text 'Secure Area'.</msg>
+<arg>Secure Area</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-09-06T14:29:27.481018" elapsed="0.015478"/>
+</kw>
+<kw name="Close FlexiSpot" owner="keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-06T14:29:27.497497" elapsed="3.341295"/>
+</kw>
+<status status="PASS" start="2025-09-06T14:29:27.496496" elapsed="3.342815"/>
+</kw>
+<status status="PASS" start="2025-09-06T14:28:07.104458" elapsed="83.736868"/>
+</test>
+<test id="s1-s2-t2" name="Invalid Login" line="14">
+<kw name="Open FlexiSpot" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-06T14:29:30.845183" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<arg>${URL_LOGIN}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-06T14:29:30.843613" elapsed="84.935006"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-06T14:30:55.778619" elapsed="0.047711"/>
+</kw>
+<status status="PASS" start="2025-09-06T14:29:30.843613" elapsed="84.982717"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T14:30:55.827336" level="INFO">Typing text 'invalid' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>invalid</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T14:30:55.827336" elapsed="0.156732"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T14:30:55.985125" level="INFO">Typing text 'wrong' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>wrong</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T14:30:55.985125" elapsed="0.239762"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T14:30:56.228715" level="INFO">Clicking button 'css=button.radius'.</msg>
+<arg>css=button.radius</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T14:30:56.228715" elapsed="2.043168"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-09-06T14:30:58.305105" level="INFO">Current page contains text 'Your username is invalid!'.</msg>
+<arg>Your username is invalid!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-09-06T14:30:58.273114" elapsed="0.031991"/>
+</kw>
+<kw name="Close FlexiSpot" owner="keywords">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-06T14:30:58.306592" elapsed="3.386792"/>
+</kw>
+<status status="PASS" start="2025-09-06T14:30:58.306592" elapsed="3.386792"/>
+</kw>
+<status status="PASS" start="2025-09-06T14:29:30.842348" elapsed="90.852020"/>
+</test>
+<status status="PASS" start="2025-09-06T14:28:07.087440" elapsed="174.607930"/>
+</suite>
+<status status="FAIL" start="2025-09-06T14:27:13.236132" elapsed="228.461234"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="2" fail="1" skip="0">Tests</stat>
+<stat name="Booking Tests" id="s1-s1" pass="0" fail="1" skip="0">Tests.Booking Tests</stat>
+<stat name="Login Tests" id="s1-s2" pass="2" fail="0" skip="0">Tests.Login Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
